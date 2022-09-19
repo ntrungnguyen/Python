@@ -17,7 +17,7 @@ class Example(Frame):
         Style().configure('TFrame', background='#333')
         
         #Tạo đối tượng ảnh và tải chúng vào chương trình
-        bard = Image.open('UseCase_N01.png')
+        bard = Image.open('../../london.jpg')
         bard = bard.resize((100,100), Image.Resampling.LANCZOS)
         bardejov = ImageTk.PhotoImage(bard)
         
@@ -29,7 +29,7 @@ class Example(Frame):
         label11.place(x=20,y=20)
         
         
-        rot = Image.open('UseCase_N01.png')
+        rot = Image.open('../../london.jpg')
         rot = rot.resize((100,100), Image.Resampling.LANCZOS)
         rotunda = ImageTk.PhotoImage(rot)
         label12 = Label(self, image=rotunda)
@@ -37,7 +37,7 @@ class Example(Frame):
         label12.place(x=40, y=160)
         
         
-        minc = Image.open('UseCase_N01.png')
+        minc = Image.open('../../london.jpg')
         minc = minc.resize((100,100), Image.Resampling.LANCZOS)
         mincol = ImageTk.PhotoImage(minc)
         label13 = Label(self, image=mincol)

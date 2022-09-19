@@ -23,7 +23,7 @@ class Example(Frame):
         #Tạo nút close
         #Phương thức Pack quy định cách hiển thị trên cửa sổ
         #side = RIGHT, đưa button vào vị trí bến phải
-        #padx pady: khoảng cách button với widget khác và với
+        #padx pady: khoảng cách button với widget khác và với các widget khác
         #đường viền cửa sổ chính (5px)
         closeButton = Button(self, text='Close')
         closeButton.pack(side=RIGHT, padx=5, pady=5)
