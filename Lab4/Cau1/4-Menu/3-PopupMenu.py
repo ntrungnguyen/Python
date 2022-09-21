@@ -29,6 +29,7 @@ class Example(Frame):
     def onExit(self):
         self.quit()
 
+
 root = Tk()
 root.geometry('250x150+300+300')
 app = Example(root)
