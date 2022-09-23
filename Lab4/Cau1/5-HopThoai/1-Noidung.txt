@@ -1,0 +1,20 @@
+import tkinter.messagebox as mbox
+
+import tkinter.colorchooser import askcolor
+
+Các kiểu messagebox khác:
+
+askokcancel(title, message, option)
+askquestion(title, message, option)
+askretrycancel(title, message, option)
+askyesno(title, message, option)
+showinfo(title, message, option)
+showwarning(title, message, option)
+
+option: là tham số tùy chỉnh hộp thoại dùng để tùy chỉnh một số tính chất như
+chọn Icon cho hộp thoại, chọn cửa sổ cha (có thể không cần quan tâm)
+
+askokcancel, askretrycancel, askyesno trả về giá trị True khi người dùng bấm
+vào nút OK hoặc YES, FALSE khi bấm vào NO hoặc CANCEL.
+
+askquestion trả về giá trị YES và NO
