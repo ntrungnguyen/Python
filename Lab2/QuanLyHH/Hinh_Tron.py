@@ -4,11 +4,10 @@ from math import pi
 class HinhTron(HinhHoc):
     def __init__(self, canh: float) -> None:
         super().__init__(canh)
-        self.__banKinh = canh
+        self._banKinh = canh
         
     def __str__(self) -> str:
-        return super().__str__() + f" Hình tròn có bán kính {self.__banKinh} Diện tích {self.dienTich}"
+        return super().__str__() + f" Hình tròn có bán kính {self._banKinh} Diện tích {self.dienTich()}"
     
-    @property
     def dienTich(self):
-        return round(pi * pow(int(self.__banKinh), 2), 2)
+        return float(round(pi * pow(int(self._banKinh), 2), 2))

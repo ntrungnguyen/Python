@@ -6,3 +6,7 @@ Place: Kiểu layout tự do
 - Tự quy định vị trí và kích thước cho các widget trên màn hình
 - Kích thước cửa sổ thay đổi thì kích thước vị trí của các widget không thay đổi
 - Thêm hay bất các widget hầu như phải sắp xếp toàn bộ widget
+
+#2 tham số đầu là kích thước cửa sổ
+#2 phương thức sau là vị trí cửa sổ
+root.geometry('250x150+300+300')

@@ -82,7 +82,8 @@ while True:
         case 11:
             system("CLS")
             print('11: Tìm hình theo diện tích')
-            kq = dshh.timHinhTheoS(12)
+            nhap = float(input('Nhập diện tích cần tìm: '))
+            kq = dshh.timHinhTheoS(nhap)
             for tmp in kq:
                 print(tmp)
         case 12:

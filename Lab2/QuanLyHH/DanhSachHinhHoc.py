@@ -40,8 +40,8 @@ class DanhSachHH:
         max = 0
         result = HinhHoc(0)
         for hh in self.dshh:
-            if hh.dienTich > max:
-                max = hh.dienTich
+            if hh.dienTich() > max:
+                max = hh.dienTich()
                 result = hh
         return print(result)
     
@@ -49,8 +49,8 @@ class DanhSachHH:
         min = sys.maxsize
         result = HinhHoc(0)
         for hh in self.dshh:
-            if hh.dienTich < min:
-                min = hh.dienTich
+            if hh.dienTich() < min:
+                min = hh.dienTich()
                 result = hh
         return print(result)
     
@@ -59,23 +59,23 @@ class DanhSachHH:
         result = HinhHoc(0)
         if(loaiHinh == "HinhTron"):
             for hh in self.dshh:
-                if hh.dienTich > max and isinstance(hh, HinhTron):
-                    max = hh.dienTich
+                if hh.dienTich() > max and isinstance(hh, HinhTron):
+                    max = hh.dienTich()
                     result = hh
         elif(loaiHinh == "HinhChuNhat"):
             for hh in self.dshh:
-                if hh.dienTich > max and isinstance(hh, HinhChuNhat):
-                    max = hh.dienTich
+                if hh.dienTich() > max and isinstance(hh, HinhChuNhat):
+                    max = hh.dienTich()
                     result = hh
         elif(loaiHinh == "HinhVuong"):
             for hh in self.dshh:
-                if hh.dienTich > max and isinstance(hh, HinhVuong):
-                    max = hh.dienTich
+                if hh.dienTich() > max and isinstance(hh, HinhVuong):
+                    max = hh.dienTich()
                     result = hh
         return print(result)
     
     def sapGiamTheoS(self):
-        return self.dshh.sort(key = lambda x: x.dienTich, reverse=True)
+        return self.dshh.sort(key = lambda x: x.dienTich(), reverse=True)
     
     def demSoLuongHinhTheoLoai(self, loai: str):
         result = []
@@ -90,14 +90,14 @@ class DanhSachHH:
     def tinhTongS(self):
         sum = 0
         for hh in self.dshh:
-            sum += hh.dienTich
+            sum += hh.dienTich()
         return f"\nTổng diện tích của các hình là {round(sum,2)}"
     
     def timVtCuaHinh(self, h: HinhHoc):
         pass
             
     def timHinhTheoS(self, s:float):
-        return [hh for hh in self.dshh if hh.dienTich == s]
+        return [hh for hh in self.dshh if hh.dienTich() == s]
     
     def xoa(self, hh: HinhHoc):
         self.dshh.remove(hh)

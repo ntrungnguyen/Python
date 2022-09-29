@@ -1,14 +1,9 @@
-from Hinh_Hoc import HinhHoc
 from Hinh_CN import HinhChuNhat
 
-class HinhVuong(HinhHoc):
+class HinhVuong(HinhChuNhat):
     def __init__(self, canh: float) -> None:
-        super().__init__(canh)   
-        self.__canh = canh
+        super().__init__(canh, canh)
         
     def __str__(self) -> str:
-        return super().__str__() + f" Hình vuông cạnh {self.__canh} Diện tích {self.dienTich}"
-    
-    @property
-    def dienTich(self):
-        return int(self.__canh) * int(self.__canh)
+        return f"\nHình vuông cạnh {self.canh} Diện tích {self.dienTich()}"
+        
