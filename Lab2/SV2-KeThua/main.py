@@ -1,5 +1,4 @@
 from datetime import datetime
-from sinh_vien import SinhVien
 from sinh_vien_chinh_quy import SinhVienChinhQuy
 from sv_phi_chinh_quy import SinhVienPhiChinhQuy
 from ds_sinh_vien import DanhSachSv

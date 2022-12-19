@@ -1,0 +1,5 @@
+a = int(input("Nhập số thứ nhất: "))
+b = int(input("Nhập số thứ hai: "))
+print("Kết quả")
+print(f"{a} + {b} =", a + b)
+print(f"{a} lũy thừa {b} bằng", a**b)
